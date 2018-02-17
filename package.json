@@ -1,0 +1,29 @@
+{
+  "name": "project-euler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src\\index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test"
+  },
+  "keywords": [
+    "euler"
+  ],
+  "author": "Chris Bellini",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.14.1",
+    "csv": "^2.0.0"
+  },
+  "devDependencies": {
+    "eslint-config-google": "^0.9.1",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^6.0.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1"
+  }
+}
