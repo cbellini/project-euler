@@ -1,9 +1,11 @@
 // https://projecteuler.net/problem=6
-exports.solve = function (...args) {
-    var maxNaturalNumbers = args[0] || 100;
-    var sumOfSquares = 0, squareOfSum = 0, difference = 0;
+exports.solve = function(...args) {
+    let maxNaturalNumbers = args[0] || 100;
+    let sumOfSquares = 0;
+    let squareOfSum = 0;
+    let difference = 0;
 
-    for (var i = 1; i <= maxNaturalNumbers; i++) {
+    for (let i = 1; i <= maxNaturalNumbers; i++) {
         sumOfSquares += Math.pow(i, 2);
         squareOfSum += i;
     }
@@ -12,4 +14,4 @@ exports.solve = function (...args) {
     difference = squareOfSum - sumOfSquares;
 
     return difference;
-}
+};
