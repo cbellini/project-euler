@@ -14,7 +14,7 @@ exports.solve = function(...args) {
         }
 
         /**
-         * Add two numbers.
+         * Determine if a number is prime.
          * @param {number} num The input number.
          * @return {boolean} Return true if the number is prime.
          */

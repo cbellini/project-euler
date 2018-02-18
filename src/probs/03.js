@@ -1,4 +1,10 @@
 // https://projecteuler.net/problem=3
+
+/**
+ * Determine if a number is prime.
+ * @param {number} num The input number.
+ * @return {boolean} Return true if the number is prime.
+ */
 function isPrimeNumber(num) {
     if (num <= 1) {
         return false;
@@ -12,8 +18,8 @@ function isPrimeNumber(num) {
         return false;
     }
 
-    var sqrtNum = Math.sqrt(num);
-    for (var i = 3; i <= sqrtNum; i += 2) {
+    let sqrtNum = Math.sqrt(num);
+    for (let i = 3; i <= sqrtNum; i += 2) {
         if (num % i === 0) {
             return false;
         }
@@ -22,9 +28,11 @@ function isPrimeNumber(num) {
     return true;
 }
 
-exports.solve = function (...args) {
-    var number = args[0] || 600851475143;
-    var isStillFactorable = true, tempResult = number, factor = 2;
+exports.solve = function(...args) {
+    let number = args[0] || 600851475143;
+    let isStillFactorable = true;
+    let tempResult = number;
+    let factor = 2;
 
     for (; factor <= Number.MAX_VALUE && tempResult !== 1; ++factor) {
         if (!isPrimeNumber(factor)) {
