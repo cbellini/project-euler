@@ -1,7 +1,10 @@
 // https://projecteuler.net/problem=2
-exports.solve = function (...args) {
-    var limit = args[0] || 4000000;
-    var prev = 1, curr = 2, next = 0, sum = 2;
+exports.solve = function(...args) {
+    let limit = args[0] || 4000000;
+    let prev = 1;
+    let curr = 2;
+    let next = 0;
+    let sum = 2;
 
     do {
         next = prev + curr;
@@ -14,4 +17,4 @@ exports.solve = function (...args) {
     } while (next <= limit);
 
     return sum;
-}
+};
