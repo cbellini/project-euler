@@ -20,7 +20,7 @@ npm install
 The problems can be run from the src folder on the command line by supplying problem number and input parameters as arguments. For example, running the 4th problem supplying "foo" and "bar" as input parameters is accomplished by:
 
 ```sh
-node index -p 04 foo,bar
+node index -p 04 -i foo,bar
 ```
 
 ### Running the tests
